@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EstroG-100 Malaysia – Official LUVEA HQ</title>
+<meta name="description" content="EstroG-100® - Suplemen Menopause No 1 Best Selling di Malaysia. Bayar Bila Barang Sampai (COD).">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --yellow:#FFC629;
+    --yellow-deep:#F5B400;
+    --ink:#2B2320;
+    --ink-soft:#5B5048;
+    --card:#FFFFFF;
+    --note-bg:#F2F2F2;
+    --accent:#E8542C;
+    --accent-dark:#C93F1C;
+    --line:#E9E2D6;
+    --radius:14px;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    font-family:'Poppins',system-ui,sans-serif;
+    background:var(--yellow);
+    color:var(--ink);
+    line-height:1.5;
+  }
+  img{max-width:100%;display:block;}
+  a{color:inherit;}
+  .wrap{max-width:640px;margin:0 auto;padding:0 18px;}
+  section{padding:34px 0;}
+  h1,h2,h3{line-height:1.25;margin:0 0 12px;}
+  h1{font-size:1.5rem;font-weight:800;text-align:center;}
+  h2{font-size:1.25rem;font-weight:700;text-align:center;}
+  h3{font-size:1.05rem;font-weight:700;}
+  p{margin:0 0 12px;}
+  .tag{
+    display:block;text-align:center;font-weight:700;color:var(--accent-dark);
+    font-size:.95rem;margin-bottom:4px;
+  }
+  .center{text-align:center;}
+  .btn{
+    display:inline-block;background:var(--accent);color:#fff;font-weight:700;
+    padding:14px 26px;border-radius:999px;text-decoration:none;border:none;
+    font-size:1rem;cursor:pointer;box-shadow:0 6px 0 var(--accent-dark);
+  }
+  .btn:active{transform:translateY(3px);box-shadow:0 3px 0 var(--accent-dark);}
+  .btn-block{display:block;width:100%;text-align:center;}
+  .card{background:var(--card);border-radius:var(--radius);padding:20px;box-shadow:0 2px 10px rgba(0,0,0,.06);}
+  .logo-row{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin:16px 0;}
+  .logo-row img{height:52px;width:auto;}
+  .quote{
+    background:var(--card);border-radius:var(--radius);padding:18px;margin-bottom:14px;
+    box-shadow:0 2px 10px rgba(0,0,0,.06);
+  }
+  .quote p{font-style:italic;margin-bottom:6px;}
+  .quote span{font-size:.85rem;color:var(--ink-soft);font-weight:600;}
+  .herb-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:16px 0;}
+  .herb-grid figure{margin:0;text-align:center;}
+  .herb-grid img{border-radius:10px;}
+  .herb-grid figcaption{font-size:.78rem;font-style:italic;margin-top:6px;color:var(--ink-soft);}
+  .study-card{background:var(--card);border-radius:var(--radius);padding:16px;margin-bottom:16px;box-shadow:0 2px 10px rgba(0,0,0,.06);}
+  .study-card a{color:var(--accent-dark);font-weight:600;font-size:.92rem;}
+  .price-grid{display:grid;gap:14px;margin:18px 0;}
+  .price-grid img{border-radius:10px;}
+  .faq details{background:var(--card);border-radius:10px;padding:14px 16px;margin-bottom:10px;box-shadow:0 2px 8px rgba(0,0,0,.05);}
+  .faq summary{font-weight:600;cursor:pointer;}
+  .faq p{margin-top:10px;font-size:.93rem;color:var(--ink-soft);}
+  footer{background:#2B2320;color:#cfc7bd;padding:26px 0;font-size:.78rem;text-align:center;}
+  footer a{color:#e9c46a;}
+
+  /* Checkout */
+  #order .card{margin-bottom:16px;}
+  .pkg-list{display:flex;flex-direction:column;gap:10px;}
+  .pkg{
+    display:flex;align-items:center;justify-content:space-between;gap:12px;
+    border:2px solid var(--line);border-radius:12px;padding:12px 14px;cursor:pointer;
+  }
+  .pkg.selected{border-color:var(--accent);background:#FFF6F2;}
+  .pkg-left{display:flex;align-items:center;gap:10px;}
+  .pkg-left input{accent-color:var(--accent);width:18px;height:18px;}
+  .pkg-name{font-weight:700;font-size:.92rem;}
+  .pkg-sub{font-size:.78rem;color:var(--ink-soft);}
+  .pkg-price{font-weight:800;color:var(--accent-dark);white-space:nowrap;}
+  label.field{display:block;font-size:.85rem;font-weight:600;margin:10px 0 4px;}
+  input[type=text],input[type=tel],input[type=email],select{
+    width:100%;padding:11px 12px;border:1px solid var(--line);border-radius:8px;
+    font-family:inherit;font-size:.95rem;background:#fff;
+  }
+  .row2{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+  table.summary{width:100%;border-collapse:collapse;font-size:.9rem;margin-top:8px;}
+  table.summary td{padding:8px 0;border-bottom:1px solid var(--line);}
+  table.summary td:last-child{text-align:right;}
+  table.summary tr.total td{font-weight:800;font-size:1rem;border-bottom:none;padding-top:12px;}
+  .cod-box{border:2px solid var(--accent);background:#FFF6F2;border-radius:12px;padding:14px;}
+  .cod-box .cod-head{display:flex;align-items:center;gap:10px;font-weight:700;}
+  .cod-box .cod-head input{accent-color:var(--accent);width:18px;height:18px;}
+  .cod-note{background:var(--note-bg);border-radius:10px;padding:12px 14px;margin-top:10px;font-size:.85rem;color:var(--ink-soft);}
+  .cod-note p{margin:0 0 6px;}
+  .privacy-note{font-size:.78rem;color:var(--ink-soft);margin:14px 0;}
+  .privacy-note a{color:var(--accent-dark);text-decoration:underline;}
+  .sticky-total{position:sticky;bottom:0;background:var(--yellow);padding:10px 0 0;}
+  #thankyou{display:none;background:#fff;border-radius:14px;padding:26px;text-align:center;box-shadow:0 2px 10px rgba(0,0,0,.08);}
+  #thankyou h3{color:var(--accent-dark);}
+  .wa-btn{
+    display:inline-flex;align-items:center;gap:8px;background:#25D366;color:#fff;
+    padding:12px 22px;border-radius:999px;text-decoration:none;font-weight:700;
+  }
+  @media(min-width:520px){
+    .herb-grid figcaption{font-size:.85rem;}
+  }
+</style>
+
+<!-- Meta / Facebook Pixel -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1833429984684391');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1833429984684391&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel -->
+
+</head>
+<body>
+
+<!-- HERO -->
+<section>
+  <div class="wrap">
+    <span class="tag">[BELI 4 PERCUMA 2] DISKAUN SEHINGGA 69%</span>
+    <h1>SUPLEMEN MENOPAUSE NO 1 BEST SELLING IN MALAYSIA</h1>
+    <p class="center" style="font-weight:600;">TERJUAL LEBIH 557,344 UNIT BOTOL !!</p>
+    <img src="images/img001.webp" decoding="async" alt="EstroG-100 header">
+    <div class="logo-row">
+      <img src="images/img002.webp" loading="lazy" decoding="async" alt="Logo Halal">
+      <img src="images/img003.webp" loading="lazy" decoding="async" alt="Logo Mesti">
+      <img src="images/img004.webp" loading="lazy" decoding="async" alt="Logo EstroG-100">
+      <img src="images/img005.webp" loading="lazy" decoding="async" alt="Buatan Malaysia">
+    </div>
+    <img src="images/img006.webp" loading="lazy" decoding="async" alt="60 hari jaminan wang dikembalikan" style="max-width:220px;margin:10px auto;">
+    <p class="center"><a href="#order" class="btn btn-block">Order Sekarang</a></p>
+  </div>
+</section>
+
+<!-- TERIMA KASIH -->
+<section style="background:#fff;">
+  <div class="wrap">
+    <h2>TERIMA KASIH PENGGUNA EstroG-100® REPEAT BERBOTOL-BOTOL</h2>
+    <img src="images/img007.webp" loading="lazy" decoding="async" alt="Gambar pengguna EstroG-100">
+    <img src="images/img008.webp" loading="lazy" decoding="async" alt="Testimoni 2" style="margin-top:14px;">
+    <img src="images/img009.webp" loading="lazy" decoding="async" alt="Testimoni 1" style="margin-top:14px;">
+  </div>
+</section>
+
+<!-- QUOTES -->
+<section>
+  <div class="wrap">
+    <h2>Jom Dengar Kenapa Mereka Pilih EstroG-100® Sebagai Suplemen Harian Mereka</h2>
+    <div class="quote">
+      <p>"3 simptom ni terus hilang selepas saya amalkan EstroG-100® ni"</p>
+      <span>Rosnah Johari, Pelakon & Pengguna</span>
+    </div>
+    <div class="quote">
+      <p>"Orang diluar sana yang ingin menggunakan EstroG-100®, gunakan tanpa was-was dan berkeyakinan"</p>
+      <span>Farisha Irwayu, Pelakon & Pengguna</span>
+    </div>
+  </div>
+</section>
+
+<!-- SYMPTOMS -->
+<section style="background:#fff;">
+  <div class="wrap">
+    <h2>Anda Bukan Seorang. Perubahan Ini Dialami Ramai Wanita & Tidak Wajar Diabaikan.</h2>
+    <img src="images/img010.webp" loading="lazy" decoding="async" alt="Simptom 4">
+    <img src="images/img011.webp" loading="lazy" decoding="async" alt="Simptom 1" style="margin-top:10px;">
+    <img src="images/img012.webp" loading="lazy" decoding="async" alt="Simptom 2" style="margin-top:10px;">
+    <img src="images/img013.webp" loading="lazy" decoding="async" alt="Simptom 3" style="margin-top:10px;">
+    <img src="images/img014.webp" loading="lazy" decoding="async" alt="Simptom 5" style="margin-top:10px;">
+    <img src="images/img015.webp" loading="lazy" decoding="async" alt="Simptom 6" style="margin-top:10px;">
+    <p style="margin-top:16px;font-weight:600;">Saya tahu.. Anda dah cuba kuat setiap hari.. Tapi bila umur meningkat, badan mula berubah.. Emosi pun terasa lain.. Cepat penat. Sensitif. Sukar rehat.. Kadang sampai terfikir… "Kenapa aku dah tak rasa macam diri aku yang dulu?"</p>
+  </div>
+</section>
+
+<!-- SOLUSI -->
+<section>
+  <div class="wrap">
+    <h2>EstroG-100® SOLUSI TERBAIK GEJALA MENOPAUSE SECARA MENYELURUH</h2>
+    <p class="center" style="font-weight:600;color:var(--ink-soft);">Terbukti Hasil Kajian Doktor Pakar & Diiktiraf Antarabangsa</p>
+    <img src="images/img016.webp" loading="lazy" decoding="async" alt="Bahan EstroG-100">
+    <p style="margin-top:14px;">EstroG-100® ialah suplemen wanita yang diformulasikan untuk membantu simptom perimenopause dan menopause seperti hot flashes, mood swing, susah tidur, mudah letih dan kekeringan faraj.</p>
+    <p>Ia mengandungi bahan EstroG-100 — formulasi 3 herba Korea — serta Vitamin C. Formula ini 100% tanpa hormon.</p>
+    <p>EstroG-100® adalah campuran 3 herba yang telah digunakan lebih 400 tahun di Korea sebagai rawatan atasi simptom menopause.</p>
+    <div class="herb-grid">
+      <figure><img src="images/img017.webp" loading="lazy" decoding="async" alt="Cynanchum Wilfordii"><figcaption>Cynanchum Wilfordii</figcaption></figure>
+      <figure><img src="images/img018.webp" loading="lazy" decoding="async" alt="Phlomis Umbrosa"><figcaption>Phlomis Umbrosa</figcaption></figure>
+      <figure><img src="images/img019.webp" loading="lazy" decoding="async" alt="Angelica Gigas"><figcaption>Angelica Gigas</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- BUKTI PERUBAHAN -->
+<section style="background:#fff;">
+  <div class="wrap">
+    <h2>INI BUKTI PERUBAHAN POSITIF YANG MEREKA ALAMI</h2>
+    <img src="images/img020.webp" loading="lazy" decoding="async" alt="Liza Abdullah testimoni">
+    <img src="images/img021.webp" loading="lazy" decoding="async" alt="Farisha Irwayu testimoni" style="margin-top:10px;">
+    <img src="images/img022.webp" loading="lazy" decoding="async" alt="Anne Abdullah testimoni" style="margin-top:10px;">
+    <img src="images/img023.webp" loading="lazy" decoding="async" alt="Zila Bakarin testimoni" style="margin-top:10px;">
+    <img src="images/img024.webp" loading="lazy" decoding="async" alt="Rosnah Johari testimoni" style="margin-top:10px;">
+  </div>
+</section>
+
+<!-- COMPARISON -->
+<section>
+  <div class="wrap">
+    <h2>EstroG-100® TERBUKTI BERKESAN & SELAMAT BERBANDING JAMU & SUNTIKAN HORMON (HRT)</h2>
+    <img src="images/img025.webp" loading="lazy" decoding="async" alt="Perbandingan produk">
+    <img src="images/img026.webp" loading="lazy" decoding="async" alt="Wajah baru" style="margin-top:10px;">
+  </div>
+</section>
+
+<!-- CERTS -->
+<section style="background:#fff;">
+  <div class="wrap">
+    <h2>100% TANPA HORMON • 100% HALAL</h2>
+    <img src="images/img027.webp" loading="lazy" decoding="async" alt="Sijil KKM">
+    <div class="logo-row" style="margin-top:14px;">
+      <img src="images/img028.webp" loading="lazy" decoding="async" alt="Sijil Halal" style="height:90px;">
+      <img src="images/img029.webp" loading="lazy" decoding="async" alt="Sijil MESTI" style="height:90px;">
+    </div>
+  </div>
+</section>
+
+<!-- KILANG -->
+<section>
+  <div class="wrap">
+    <h2>DIHASILKAN MENGIKUT STANDARD KUALITI YANG TERJAMIN KESELAMATAN & KEBERSIHAN</h2>
+    <img src="images/img030.webp" loading="lazy" decoding="async" alt="Proses kilang">
+    <img src="images/img031.webp" loading="lazy" decoding="async" alt="Cara pemakanan" style="margin-top:14px;">
+  </div>
+</section>
+
+<!-- STUDIES -->
+<section style="background:#fff;">
+  <div class="wrap">
+    <h2>INI BUKTI KAJIAN DOKTOR PAKAR</h2>
+    <div class="study-card">
+      <h3>Kajian Pakar 1</h3>
+      <img src="images/img032.webp" loading="lazy" decoding="async" alt="Kajian pakar 1" style="margin-bottom:10px;">
+      <a href="https://www.heraldopenaccess.us/openaccess/a-12-week-multi-center-double-blind-randomized-placebo-controlled-clinical-trial-for-the-evaluation-of-the-efficacy-and-safety-of-the-herbal-extract-estrog-100-on-menopausal-symptoms" target="_blank" rel="noopener">Kajian 12 Minggu: EstroG-100® Berkesan & Selamat Tanpa Kesan Sampingan Untuk Menopause</a>
+    </div>
+    <div class="study-card">
+      <h3>Kajian Pakar 2</h3>
+      <img src="images/img033.webp" loading="lazy" decoding="async" alt="Kajian pakar 2" style="margin-bottom:10px;">
+      <a href="https://pubmed.ncbi.nlm.nih.gov/38504729/" target="_blank" rel="noopener">Kajian 12 Minggu: 96% Akui Gejala Menopause Berkurang. Tidak Tingkatkan Berat Badan & Bacaan Gula</a>
+    </div>
+  </div>
+</section>
+
+<!-- CUSTOMER TESTI -->
+<section>
+  <div class="wrap">
+    <h2>Ini Perubahan Positif Dari Pelanggan</h2>
+    <img src="images/img034.webp" loading="lazy" decoding="async" alt="Testimoni pelanggan 1">
+    <img src="images/img035.webp" loading="lazy" decoding="async" alt="Testimoni pelanggan 2" style="margin-top:10px;">
+    <h2 style="margin-top:26px;">Jom Dengar Pengalaman Sebenar Mereka Dengan EstroG-100</h2>
+    <div class="quote">
+      <p>"Memang ada perubahan dari segi emosi, keghairahan rasa bahagia selepas guna EstroG-100"</p>
+      <span>Anne Abdullah, Pelakon & Pengguna</span>
+    </div>
+    <div class="quote">
+      <p>"Tak perlu susah-susah, makan pun senang, rasa pun sedap, boleh bawak merata tempat"</p>
+      <span>Liza Abdullah, Pelakon & Pengguna</span>
+    </div>
+  </div>
+</section>
+
+<!-- FREEGIFT -->
+<section style="background:#fff;">
+  <div class="wrap">
+    <img src="images/img036.webp" loading="lazy" decoding="async" alt="Parcel EstroG-100">
+    <h2 style="margin-top:16px;">Dapatkan 3 Freegift Menarik Hanya Dengan PAKEJ 4 FREE 2 BOTOL Hari Ini!</h2>
+    <img src="images/img037.webp" loading="lazy" decoding="async" alt="Freegift">
+  </div>
+</section>
+
+<!-- DOCTOR -->
+<section>
+  <div class="wrap">
+    <h2>DOKTOR JUGA SYORKAN EstroG-100® SEBAGAI PILIHAN TERBAIK UNTUK GEJALA MENOPAUSE</h2>
+    <img src="images/img038.webp" loading="lazy" decoding="async" alt="Perbandingan produk doktor">
+    <h3 style="margin-top:18px;text-align:center;">Awas Dengan Overclaim!</h3>
+    <p class="center">Doktor sarankan, apa-apa jenis suplemen (kategori bukan ubat) tidak boleh memberi kesan segera. Namun, ia perlu diambil secara konsisten sekurang-kurangnya 4 minggu dan ke atas untuk kesan yang menyeluruh.</p>
+    <p class="center"><a href="#order" class="btn">Beli Formulasi Baharu Sekarang</a></p>
+  </div>
+</section>
+
+<!-- PRICING PROMO -->
+<section style="background:#fff;">
+  <div class="wrap">
+    <p class="center" style="font-weight:700;">Pakar Syorkan Pakej 4 Free 2 Paling Berkesan Untuk Kesan Optimum Bantu Gejala Menopause</p>
+    <img src="images/img039.webp" loading="lazy" decoding="async" alt="Perbandingan botol">
+    <h3 class="center" style="margin-top:18px;">Beli Tanpa Risau, Trusted Direct HQ!</h3>
+    <p class="center">Setiap order dihantar terus dari HQ. 100% original, selamat & dijamin sampai ke tangan anda.</p>
+    <img src="images/img040.webp" loading="lazy" decoding="async" alt="Collage pengguna" style="margin-top:16px;">
+    <h2 style="margin-top:22px;">DAPATKAN HARGA PROMOSI DI BAWAH SEKARANG!</h2>
+    <div class="price-grid">
+      <a href="#order"><img src="images/img041.webp" loading="lazy" decoding="async" alt="Harga Pakej 4 Free 2"></a>
+      <a href="#order"><img src="images/img042.webp" loading="lazy" decoding="async" alt="Harga Pakej 3"></a>
+      <a href="#order"><img src="images/img043.webp" loading="lazy" decoding="async" alt="Harga Pakej 2"></a>
+      <a href="#order"><img src="images/img044.webp" loading="lazy" decoding="async" alt="Harga Pakej 1"></a>
+    </div>
+  </div>
+</section>
+
+<!-- ORDER / CHECKOUT -->
+<section id="order">
+  <div class="wrap">
+    <h2>Pakej Istimewa Untuk Pilihan Anda</h2>
+
+    <form id="checkoutForm" name="checkout" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+      <input type="hidden" name="form-name" value="checkout">
+      <p style="display:none;"><label>Jangan isi ini: <input name="bot-field"></label></p>
+
+      <div class="card">
+        <div class="pkg-list" id="pkgList">
+          <label class="pkg selected" data-price="150" data-name="4 Botol Free 2 EstroG-100">
+            <span class="pkg-left">
+              <input type="radio" name="package" value="4 Botol Free 2 EstroG-100|150" checked>
+              <span>
+                <span class="pkg-name">4 Botol Free 2 EstroG-100</span><br>
+                <span class="pkg-sub">RM25/Botol • PAKEJ PILIHAN RAMAI</span>
+              </span>
+            </span>
+            <span class="pkg-price">RM150.00</span>
+          </label>
+          <label class="pkg" data-price="99" data-name="3 Botol EstroG-100">
+            <span class="pkg-left">
+              <input type="radio" name="package" value="3 Botol EstroG-100|99">
+              <span>
+                <span class="pkg-name">3 Botol EstroG-100</span><br>
+                <span class="pkg-sub">RM33/Botol</span>
+              </span>
+            </span>
+            <span class="pkg-price">RM99.00</span>
+          </label>
+          <label class="pkg" data-price="68" data-name="2 Botol EstroG-100">
+            <span class="pkg-left">
+              <input type="radio" name="package" value="2 Botol EstroG-100|68">
+              <span>
+                <span class="pkg-name">2 Botol EstroG-100</span><br>
+                <span class="pkg-sub">RM34/Botol</span>
+              </span>
+            </span>
+            <span class="pkg-price">RM68.00</span>
+          </label>
+          <label class="pkg" data-price="35" data-name="1 Botol EstroG-100">
+            <span class="pkg-left">
+              <input type="radio" name="package" value="1 Botol EstroG-100|35">
+              <span>
+                <span class="pkg-name">1 Botol EstroG-100</span><br>
+                <span class="pkg-sub">RM35/Botol</span>
+              </span>
+            </span>
+            <span class="pkg-price">RM35.00</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Billing & Shipping</h3>
+        <label class="field">Nama Penuh *</label>
+        <input type="text" name="nama_penuh" required>
+
+        <label class="field">No Telefon (+60) *</label>
+        <input type="tel" name="no_telefon" placeholder="+60" required>
+
+        <label class="field">Alamat Penuh *</label>
+        <input type="text" name="alamat" required>
+
+        <div class="row2">
+          <div>
+            <label class="field">Bandar *</label>
+            <input type="text" name="bandar" required>
+          </div>
+          <div>
+            <label class="field">Poskod *</label>
+            <input type="text" name="poskod" required>
+          </div>
+        </div>
+
+        <label class="field">Negeri *</label>
+        <select name="negeri" id="negeri" required>
+          <option value="">Select an option…</option>
+          <option>Johor</option>
+          <option>Kedah</option>
+          <option>Kelantan</option>
+          <option data-ss="1">Labuan</option>
+          <option>Malacca (Melaka)</option>
+          <option>Negeri Sembilan</option>
+          <option>Pahang</option>
+          <option>Penang (Pulau Pinang)</option>
+          <option>Perak</option>
+          <option>Perlis</option>
+          <option data-ss="1">Sabah</option>
+          <option data-ss="1">Sarawak</option>
+          <option selected>Selangor</option>
+          <option>Terengganu</option>
+          <option>Putrajaya</option>
+          <option>Kuala Lumpur</option>
+        </select>
+
+        <label class="field">Negara *</label>
+        <input type="text" value="Malaysia" disabled>
+        <input type="hidden" name="negara" value="Malaysia">
+
+        <label class="field">Email (optional)</label>
+        <input type="email" name="email">
+      </div>
+
+      <div class="card">
+        <h3>Tempahan Anda</h3>
+        <table class="summary" id="summaryTable">
+          <tr><td id="sumProductLabel">4 Botol Free 2 EstroG-100 × 1</td><td id="sumProduct">RM150.00</td></tr>
+          <tr><td>Caj COD</td><td id="sumCod">RM10.00</td></tr>
+          <tr class="total"><td>Jumlah</td><td id="sumTotal">RM166.00</td></tr>
+        </table>
+      </div>
+
+      <div class="card">
+        <h3>Kaedah Pembayaran</h3>
+        <div class="cod-box">
+          <label class="cod-head">
+            <input type="radio" name="payment_method" value="COD" checked>
+            COD (Barang Sampai Baru Bayar)
+          </label>
+          <div class="cod-note">
+            <p>➡ Penghantaran COD oleh kurier Ninjavan.</p>
+            <p>➡ Sila sediakan duit secukupnya dan buat bayaran kepada posmen semasa terima barang.</p>
+            <p>➡ Penghantaran dalam masa 2-5 hari bekerja.</p>
+          </div>
+        </div>
+        <p class="privacy-note">Your personal data will be used to process your order, support your experience throughout this website, and for other purposes described in our <a href="/privacy-policy/">privacy policy</a>.</p>
+      </div>
+
+      <div class="sticky-total">
+        <button type="submit" class="btn btn-block" id="submitBtn">Beli Sekarang RM166.00</button>
+      </div>
+    </form>
+
+    <div id="thankyou">
+      <h3>Terima Kasih! 🎉</h3>
+      <p>Pesanan anda telah diterima. Team kami akan hubungi anda untuk mengesahkan penghantaran COD dalam masa 24 jam.</p>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST -->
+<section style="background:#fff;">
+  <div class="wrap">
+    <h2>Kami Faham Puan Masih Was-Was! Bukan Apa... Mungkin Dah Banyak Kali Beli Produk Online Tapi Kecewa!</h2>
+    <h3 class="center">Order Sekarang, Bayar Bila Barang Sampai</h3>
+    <ul>
+      <li>Caj tambahan RM10 (Semenanjung Malaysia) | RM17 (Sabah/Sarawak) untuk kaedah COD.</li>
+      <li>Barang akan sampai dalam 1-5 hari bekerja.</li>
+      <li>Sedia wang tunai secukupnya dan bayar posmen Ninjavan ketika barang sampai.</li>
+    </ul>
+    <img src="images/img045.webp" loading="lazy" decoding="async" alt="60 hari jaminan wang dikembalikan" style="max-width:220px;margin:14px auto;">
+    <h2>Jaminan Wang Dikembalikan!</h2>
+    <p>Kami faham setiap individu berbeza. Pakej 4 Botol Free 2 paling berbaloi kerana kami sediakan jaminan wang dikembalikan dalam masa 60 hari sekiranya anda tak nampak kesan langsung.</p>
+    <p style="font-size:.85rem;color:var(--ink-soft);">*Exclusive untuk pakej 4 botol free 2 sahaja.</p>
+  </div>
+</section>
+
+<!-- WHATSAPP -->
+<section>
+  <div class="wrap center">
+    <h2>Perlukan Bantuan Order? Chat Dengan Seller HQ Kami</h2>
+    <p>Tak Tau Nak Pilih Pakej Mana?</p>
+    <a class="wa-btn" href="https://wa.me/601123857375" target="_blank" rel="noopener">💬 Chat Cik Ira</a>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section style="background:#fff;">
+  <div class="wrap">
+    <h2>Soalan Lazim [FAQ]</h2>
+    <p class="center"><a href="#order" class="btn">Order Sekarang</a></p>
+    <div class="faq" style="margin-top:20px;">
+      <details>
+        <summary>Adakah EstroG-100® Ini Boleh Diamalkan Oleh Ibu Hamil Dan Ibu Berpantang?</summary>
+        <p>EstroG-100® adalah TIDAK SESUAI untuk wanita hamil. Jika wanita tersebut baru lepas bersalin atau menyusu, perlu tunggu sekurang-kurangnya 6 bulan atau selepas fasa menyusu tamat sebelum mula ambil (bergantung pada keadaan hormon & nasihat doktor).</p>
+      </details>
+      <details>
+        <summary>Cara Ambil EstroG-100®?</summary>
+        <p>Amalkan 2 biji tablet setiap hari (kunyah / hisap) pada waktu pagi sebelum sarapan atau malam sebelum tidur. Untuk kesan optimum, amalkan setiap hari secara konsisten.</p>
+      </details>
+      <details>
+        <summary>Berapa Jumlah Tablet Dalam EstroG-100®? Tahan Berapa Lama?</summary>
+        <p>20 tablet dalam satu botol. Boleh tahan sehingga 10 hari jika amalkan setiap hari.</p>
+      </details>
+      <details>
+        <summary>EstroG-100® Perisa Apa?</summary>
+        <p>EstroG-100® berperisa buah strawberi.</p>
+      </details>
+      <details>
+        <summary>Boleh COD (Cash On Delivery) Ke?</summary>
+        <p>Boleh, dan ini kaedah pembayaran satu-satunya yang kami sediakan sekarang. Caj tambahan RM10 (Semenanjung Malaysia) | RM17 (Sabah/Sarawak) untuk kaedah COD.</p>
+      </details>
+      <details>
+        <summary>Ada Jaminan Pulangan Wang?</summary>
+        <p>Ada, jaminan ini terhad kepada pembelian Pakej 4 Botol Free 2 sahaja.</p>
+      </details>
+      <details>
+        <summary>Policy Money Back Guarantee</summary>
+        <p>– Pelanggan perlu membeli secara terus melalui website, bukan daripada platform lain.<br>
+        – Pelanggan perlu menggunakan EstroG-100® secara konsisten selama 60 hari dan mengikut dos yang ditetapkan.<br>
+        – Pelanggan perlu melampirkan resit pembelian.<br>
+        – Jumlah wang yang akan dikembalikan hanya untuk pembelian yang terakhir.<br>
+        – Tidak nampak sebarang perubahan.<br>
+        – Tuntutan dibuat dalam tempoh 60 hari dari tarikh terima produk (rujuk tarikh terima parcel dari tracking number Ninjavan).</p>
+      </details>
+      <details>
+        <summary>Penghantaran Ambil Masa Berapa Lama?</summary>
+        <p>Kami akan proses pesanan anda dalam masa 24 jam selepas pembelian anda disahkan. Penghantaran akan mengambil masa 1-5 hari bekerja.</p>
+      </details>
+      <details>
+        <summary>Ada KKM?</summary>
+        <p>EstroG-100® telah pun mendapat pengkelasan produk sebagai makanan tambahan.</p>
+      </details>
+      <details>
+        <summary>Adakah EstroG-100® Ini Halal?</summary>
+        <p>Ya, sumber EstroG-100® adalah daripada akar herba tradisional dan ianya dijamin 100% Halal.</p>
+      </details>
+      <details>
+        <summary>Adakah EstroG-100® Sudah Bertukar?</summary>
+        <p>Ya. EstroG-100® kini hadir dengan wajah baharu serta formula yang dipertingkatkan. Kini dengan peningkatan dos EstroG-100 per tablet dan diperkaya dengan Vitamin C.</p>
+      </details>
+      <details>
+        <summary>Adakah Produk Lama Masih Boleh Digunakan?</summary>
+        <p>Ya. Produk dengan pembungkusan lama masih selamat digunakan sehingga tarikh luput. Pembungkusan baharu merupakan versi yang telah dinaik taraf.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>Facebook™️ or FB is a Registered Trademark of Facebook.com. This site is not affiliated with Facebook.com in any way, nor does it sponsor or approve any of the products. All trademarks mentioned here are copyrighted by their respective owners. Your personal data will be used to process your order, support your experience throughout this website and for other purposes described in our privacy policy.</p>
+    <p>EstroG-100 © 2026 | All Rights Reserved</p>
+    <p><a href="/privacy-policy/">Privacy Policy</a> | <a href="/terms/">Terms &amp; Conditions</a></p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var packages = document.querySelectorAll('.pkg');
+  var negeri = document.getElementById('negeri');
+  var sumProductLabel = document.getElementById('sumProductLabel');
+  var sumProduct = document.getElementById('sumProduct');
+  var sumCod = document.getElementById('sumCod');
+  var sumTotal = document.getElementById('sumTotal');
+  var submitBtn = document.getElementById('submitBtn');
+  var SHIP = 0; // Penghantaran percuma untuk semua pakej
+
+  function fmt(n){ return 'RM' + n.toFixed(2); }
+
+  function isSabahSarawak(){
+    var opt = negeri.options[negeri.selectedIndex];
+    return opt && opt.getAttribute('data-ss') === '1';
+  }
+
+  function isCodFreePackage(name){
+    return name === '3 Botol EstroG-100' || name === '4 Botol Free 2 EstroG-100';
+  }
+
+  function recalc(){
+    var selected = document.querySelector('.pkg input[name=package]:checked');
+    var price = parseFloat(selected.closest('.pkg').getAttribute('data-price'));
+    var name = selected.closest('.pkg').getAttribute('data-name');
+    var cod = isCodFreePackage(name) ? 0 : (isSabahSarawak() ? 17 : 10);
+    var total = price + SHIP + cod;
+
+    sumProductLabel.textContent = name + ' × 1';
+    sumProduct.textContent = fmt(price);
+    sumCod.textContent = fmt(cod);
+    sumTotal.textContent = fmt(total);
+    submitBtn.textContent = 'Beli Sekarang ' + fmt(total);
+
+    packages.forEach(function(p){ p.classList.remove('selected'); });
+    selected.closest('.pkg').classList.add('selected');
+  }
+
+  packages.forEach(function(p){
+    p.addEventListener('click', function(){
+      p.querySelector('input[name=package]').checked = true;
+      recalc();
+    });
+  });
+  negeri.addEventListener('change', recalc);
+  recalc();
+
+  // TODO: paste your Google Apps Script /exec URL here once you have it
+  var GOOGLE_SHEET_URL = 'https://script.google.com/macros/s/AKfycbyoMhKZMSDssFalAFSFos6ejd05jwrIiQSQgEHl3juEJaSzV9YoErPIpdAxBgl1a63Psw/exec';
+
+  var form = document.getElementById('checkoutForm');
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+
+    var selected = document.querySelector('.pkg input[name=package]:checked');
+    var packageName = selected.closest('.pkg').getAttribute('data-name');
+    var totalText = sumTotal.textContent.replace('RM', '');
+    var totalValue = parseFloat(totalText);
+
+    var data = new FormData(form);
+    var orderPayload = {
+      nama_penuh: data.get('nama_penuh'),
+      no_telefon: data.get('no_telefon'),
+      alamat: data.get('alamat'),
+      bandar: data.get('bandar'),
+      poskod: data.get('poskod'),
+      negeri: data.get('negeri'),
+      email: data.get('email'),
+      package: packageName,
+      payment_method: 'COD',
+      total: totalValue
+    };
+
+    function showThankYou(){
+      form.style.display = 'none';
+      document.getElementById('thankyou').style.display = 'block';
+      document.getElementById('thankyou').scrollIntoView({behavior:'smooth'});
+
+      // Facebook Pixel: Purchase event
+      if (typeof fbq === 'function') {
+        fbq('track', 'Purchase', {
+          value: totalValue,
+          currency: 'MYR',
+          content_name: packageName
+        });
+      }
+    }
+
+    // Show the confirmation immediately — don't make the customer wait on network calls
+    showThankYou();
+
+    // 1) Send to Netlify Forms (dashboard record / CSV export / email notification)
+    fetch('/', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+      body: new URLSearchParams(data).toString()
+    }).catch(function(){ /* non-blocking */ });
+
+    // 2) Send to live Google Sheet (fire-and-forget, runs in background)
+    if (GOOGLE_SHEET_URL.indexOf('PASTE_YOUR') === -1) {
+      fetch(GOOGLE_SHEET_URL, {
+        method: 'POST',
+        headers: {'Content-Type': 'text/plain'}, // avoids CORS preflight on Apps Script
+        body: JSON.stringify(orderPayload)
+      }).catch(function(){ /* non-blocking */ });
+    }
+  });
+})();
+</script>
+
+</body>
+</html>
